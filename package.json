@@ -18,11 +18,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch:sass": "node-sass assets/sass/main.scss assets/built-css/style.css -rw",
-    "compile:sass": "node-sass assets/sass/main.scss assets/built-css/style.comp.css",
-    "concat:css": "concat -o assets/built-css/style.concat.css assets/built-css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" assets/built-css/style.concat.css -o assets/built-css/style.prefix.css",
-    "compress:css": "node-sass assets/built-css/style.prefix.css assets/built-css/style.css --output-style compressed",
+    "watch:sass": "node-sass src/main.scss src/App.css -rw",
+    "compile:sass": "node-sass src/main.scss src/assets/css/App.comp.css",
+    "concat:css": "concat -o src/assets/css/App.concat.css src/assets/css/App.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" src/assets/css/App.concat.css -o src/assets/css/App.prefix.css",
+    "compress:css": "node-sass src/assets/css/App.prefix.css src/App.css --output-style compressed",
     "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
   "eslintConfig": {

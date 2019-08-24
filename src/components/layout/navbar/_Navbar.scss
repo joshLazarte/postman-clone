@@ -1,0 +1,12 @@
+.navbar {
+  background-color: $color-dark;
+  padding: 1.5rem;
+  font-size: 2rem;
+  color: $color-white;
+
+  &__title {
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+  }
+}
